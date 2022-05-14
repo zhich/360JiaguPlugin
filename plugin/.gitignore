@@ -1,1 +1,5 @@
 /build
+/360jiagubao/.cache/
+/360jiagubao/log/
+/360jiagubao/output/
+jiagu.db
