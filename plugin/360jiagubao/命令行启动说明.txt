@@ -1,0 +1,5 @@
+请务必使用加固助手提供的Java环境启动，否则可能产生未知问题。
+
+启动方式：
+1、进入到jiagu.jar所在目录。
+2、打开终端（CMD或PowerShell）执行 .\java\bin\java -jar jiagu.jar <此处拼接help.txt中的参数>
