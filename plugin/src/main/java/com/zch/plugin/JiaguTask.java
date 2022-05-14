@@ -30,22 +30,23 @@ public class JiaguTask extends DefaultTask {
     public void exec() {
         System.out.println(jiaguBean.toString());
 
-        File jarFile = new File(jiaguBean.getJiaguToolDir() + "/jiagu.jar");
-        String jiaguToolPath = jarFile.getAbsolutePath();
+        String jarFilePath = new File(jiaguBean.getJiaguToolDir() + "/jiagu.jar").getAbsolutePath();
+
+        System.out.println("jarFilePath=" + jarFilePath);
 
         getProject().exec(execSpec -> {
             execSpec.setWorkingDir(jiaguBean.getJiaguToolDir());
             // 登录
-            execSpec.commandLine("java", "-jar", jiaguToolPath,
+            execSpec.commandLine("java", "-jar", jarFilePath,
                     "-login", jiaguBean.getUserName(), jiaguBean.getUserPwd());
 
             // 签名
-            execSpec.commandLine("java", "-jar", jiaguToolPath,
+            execSpec.commandLine("java", "-jar", jarFilePath,
                     "-importsign", jiaguBean.getKeyStorePath(), jiaguBean.getKeyStorePass(),
                     jiaguBean.getKeyStoreKeyAlias(), jiaguBean.getKeyStoreKeyAliasPwd());
 
             // 加固
-            execSpec.commandLine("java", "-jar", jiaguToolPath,
+            execSpec.commandLine("java", "-jar", jarFilePath,
                     "-jiagu", apk.getAbsolutePath(), apk.getParent(), "-autosign");
         });
     }

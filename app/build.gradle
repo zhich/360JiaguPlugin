@@ -1,18 +1,18 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'com.zch.jiagu'
+//    id 'com.zch.jiagu'
 }
 
-jiagu {
-    userName '15916560304'
-    userPwd 'android5354'
-    keyStorePath file('../zch.jks').absolutePath
-    keyStorePass '123456'
-    keyStoreKeyAlias 'zch'
-    keyStoreKeyAliasPwd '123456'
-    jiaguToolDir "${project.getRootDir()}/360jiagubao"
-}
+//jiagu {
+//    userName '此处填写360加固账号'
+//    userPwd '此处填写360加固密码'
+//    keyStorePath file('../zch.jks').absolutePath
+//    keyStorePass '123456'
+//    keyStoreKeyAlias 'zch'
+//    keyStoreKeyAliasPwd '123456'
+//    jiaguToolDir "${project.getRootDir()}\\360jiagubao"
+//}
 
 android {
     signingConfigs {
