@@ -8,3 +8,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+/360jiagubao/.cache/
+/360jiagubao/log/
+/360jiagubao/output/
+/360jiagubao/jiagu.db

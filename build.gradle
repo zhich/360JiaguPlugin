@@ -2,7 +2,8 @@
 
 buildscript {
     dependencies {
-        classpath 'com.github.zhich:360JiaguPlugin:0.0.2'
+//        classpath 'com.github.zhich:360JiaguPlugin:0.0.2'
+        classpath "com.zch:jiagu:0.0.2"
     }
 }
 

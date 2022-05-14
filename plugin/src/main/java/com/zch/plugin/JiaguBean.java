@@ -17,6 +17,8 @@ public class JiaguBean {
     private String keyStoreKeyAlias;
     // 签名别名密码
     private String keyStoreKeyAliasPwd;
+    // 360 加固工具目录
+    private String jiaguToolDir;
 
     public String getUserName() {
         return userName;
@@ -66,6 +68,14 @@ public class JiaguBean {
         this.keyStoreKeyAliasPwd = keyStoreKeyAliasPwd;
     }
 
+    public String getJiaguToolDir() {
+        return jiaguToolDir;
+    }
+
+    public void setJiaguToolDir(String jiaguToolDir) {
+        this.jiaguToolDir = jiaguToolDir;
+    }
+
     @Override
     public String toString() {
         return "JiaguBean{" +
@@ -75,6 +85,7 @@ public class JiaguBean {
                 ", keyStorePass='" + keyStorePass + '\'' +
                 ", keyStoreKeyAlias='" + keyStoreKeyAlias + '\'' +
                 ", keyStoreKeyAliasPwd='" + keyStoreKeyAliasPwd + '\'' +
+                ", jiaguToolDir='" + jiaguToolDir + '\'' +
                 '}';
     }
 }
