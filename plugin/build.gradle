@@ -5,12 +5,12 @@ plugins {
 }
 
 dependencies {
-    implementation "com.android.tools.build:gradle:7.1.3"
+    implementation "com.android.tools.build:gradle:4.1.0"
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 gradlePlugin {
@@ -30,7 +30,7 @@ publishing {
         JiaguPlugin(MavenPublication) {
             groupId 'com.zch'
             artifactId 'jiagu'
-            version '0.0.3'
+            version '0.0.4'
             from components.java
         }
     }

@@ -1,19 +1,2 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        google()
-        mavenCentral()
-        mavenLocal()
-        maven { url 'https://jitpack.io' }
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-rootProject.name = "360JiaguPlugin"
 include ':app'
 include ':plugin'
