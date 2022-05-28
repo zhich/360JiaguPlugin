@@ -30,7 +30,7 @@ publishing {
         JiaguPlugin(MavenPublication) {
             groupId 'com.zch'
             artifactId 'jiagu'
-            version '0.0.5'
+            version '0.0.6'
             from components.java
         }
     }
